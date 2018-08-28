@@ -13,5 +13,16 @@ Following output files are made.
   example_area.png: fisheye image of equal-area projection  
   example_area_bi.png: binarized bw fisheye image of equal-area projection  
   example_area_svf.txt: sky view factor calculated from binarized fisheye image of equal-area projection  
+  
+ To run the program, place the "theta2svf_basic_revised.R" and "example.jpg" in the same folder.
+   In "theta2svf_basic_revised.R", following line should be changed
+   Please change the directry in line 9 like, "setwd("/Users/honjo/Desktop/test_folder")" which is the folder name for test.
+   
+ Also the following values of the parameter are changed if necessary.
+   xth<-0.6 #threshold value in making binary images
+   #rgb ratio
+   r_ratio<-1
+   g_ratio<-1
+   b_ratio<-1
 
 copyright 2017(c) Tsuyoshi Honjo
